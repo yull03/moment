@@ -1,0 +1,40 @@
+*{margin: 0; padding: 0;}
+body{
+    font-size: 62.5%;
+}
+
+.app{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    border: 2px solid #222;
+    border-radius: 2rem;
+}
+.time{
+    font-size:clamp(1rem,7vw,10rem);
+    font-weight: bolder;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 5rem;
+    font-size: 1.5rem;
+}
+.main h2{
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+.main button{
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    border: 2px solid #222;
+    border-radius: 2rem;
+    background-color: #777;
+    color: #fff;
+}
