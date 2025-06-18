@@ -3,6 +3,10 @@ import "./App.scss";
 import Time from "./componentes/Time";
 import MainPage from "./componentes/MainPage";
 import LoginForm from "./componentes/LoginForm";
+import Weather from "./componentes/Weather";
+import Mode from "./componentes/Mode";
+
+// import bgImg from "./images/3.jpg";
 
 
 const App = () => {
@@ -23,8 +27,14 @@ const App = () => {
         localStorage.removeItem(USER_KEY);
       setUser('');
     }
+
   return (
     <div className="app">
+      <Mode/>
+      {/* <img src="./images/1.jpg" alt="이미지1"/> */}
+      {/* <img src={`${process.env.PUBLIC_URL}/images/1.jpg`} alt="이미지1"/> */}
+      {/* <img src={bgImg} alt="이미지2"/> */}
+      <Weather/>
       <Time/>
       {
         user ? (
