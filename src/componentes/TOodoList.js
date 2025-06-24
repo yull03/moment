@@ -1,10 +1,10 @@
 
 const TOodoList = ({todos,onDelete,onToggle}) => {
     if(todos.length === 0){
-        return <p>할일이 없습니다</p>;
+        return <p className="list">할일이 없습니다</p>;
     }
     return (
-        <ul>
+        <ul className="ch-list">
             {
                 todos.map((item)=>{
                     return (

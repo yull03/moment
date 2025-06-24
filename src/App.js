@@ -12,6 +12,7 @@ import Mode from "./componentes/Mode";
 const App = () => {
   const USER_KEY="user_name";
   const [user,setUser]=useState('');
+  const [dark, setDark]=useState(false);
   //처음 시작하자마자 user_name을 읽어 와야 함
     useEffect(()=>{
       const saved=localStorage.getItem(USER_KEY);
@@ -27,10 +28,13 @@ const App = () => {
         localStorage.removeItem(USER_KEY);
       setUser('');
     }
+    const toggleDark =()=>{
+      setDark((prev)=>!prev)
+    }
 
   return (
-    <div className="app">
-      <Mode/>
+    <div className={`app ${dark ? "dark-mode" : "light-mode"}`}>
+      <Mode className="mode" dark={dark} toggleDark={toggleDark}/>
       {/* <img src="./images/1.jpg" alt="이미지1"/> */}
       {/* <img src={`${process.env.PUBLIC_URL}/images/1.jpg`} alt="이미지1"/> */}
       {/* <img src={bgImg} alt="이미지2"/> */}
