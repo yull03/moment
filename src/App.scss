@@ -6,19 +6,145 @@ body{
 .app{
     color: #fff;
     font-weight: bolder;
-    background-image: url(./images/book.jpg);
-    background-position: center;
-    background-size:cover;
-    background-repeat: no-repeat;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
-    border: 2px solid #222;
-    border-radius: 2rem;
 }
 .time{
     font-size:clamp(1rem,7vw,10rem);
 }
+.light-mode {
+    background-image: url('./images/book.jpg');
+    background-color: rgba(255, 255, 255, 0.4); // 흰색 반투명 덮개
+    background-blend-mode: overlay;
+    color: black;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    button{border: 1px solid #000;
+    }
+  }
+  
+  .dark-mode {
+    background-image: url('./images/flash.jpg');
+    background-color: rgba(0, 0, 0, 0.5); // 어두운 덮개
+    background-blend-mode: darken;
+    color: white;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    button{
+        background-color: #000;
+        color: #fff;
+        border: 1px solid #fff;
+    }
+  }
+  .btn-mode{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    gap: 3rem;
+    font-size: 1rem;
+    h2{
+        margin: 3rem auto;
+    }
+    button{
+        padding: 0.6rem 1.2rem;
+        border-radius: 30px;
+        outline: none;
+        font-size: 1.2rem;
+        font-weight: bolder;
+    }
+  }
+  .main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h2{
+        font-size: 2rem;
+        margin: 1rem;
+    }
+    button{
+        font-size: 1rem;
+        border-radius: 10px;
+        padding: 0.2rem 0.7rem;
+        font-weight: bolder;
+        transition: 0.5s;
+        &:hover{
+            transform: scale(1.1);
+            background-color: #999;
+            color: #000;
+        }
+    }
+  }
+  .text{
+    font-size: 1.8rem;
+    margin:1rem 0;
+  }
+  form{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1,7rem;
+    h2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        font-weight: bolder;
+        text-shadow: (5px 5px 8px #333);
+        margin: 1rem auto;
+    }
+    input{
+        padding: 1rem 3rem;
+        border-radius: 15px;
+        margin: 0.5rem 1rem;
+    }
+    button{
+        font-size: 1.2rem;
+        border-radius: 10px;
+        padding: 0.3rem 1rem;
+        font-weight: bolder;
+        background-color:#fff;
+        transition: 0.5s;
+        &:hover{
+            transform: scale(1.1);
+            background-color: #999;
+            color: #000;
+        }
+    }
+  }
+  .list{
+    font-size: 1.3rem;
+    padding: 1rem;
+  }
+  .ch-list{
+    margin-bottom: 10rem;
+    li{
+        margin: 1rem;
+        input {
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+          }
+    }
+    span{
+        font-size: 1.2rem;
+        margin: 1.8rem 1.5rem;
+    }
+
+  }
+  .weather{
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h3{margin-top: 1rem;}
+  }
+

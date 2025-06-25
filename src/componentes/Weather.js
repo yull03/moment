@@ -35,7 +35,7 @@ const Weather = () => {
         });
     },[]);
     return (
-        <div>
+        <div className="weather">
             {
                 weather && (
                     <div>
