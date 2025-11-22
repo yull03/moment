@@ -29,7 +29,7 @@ const Time = () => {
 
   return (
     <div className="time">
-      D-day : {remain.days}-D {remain.hours}H {remain.minutes}M {remain.seconds}S
+      {remain.days}일<p></p> {remain.hours}시간<p></p> {remain.minutes}분<p></p> {remain.seconds}초
     </div>
   );
 };

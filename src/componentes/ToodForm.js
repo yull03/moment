@@ -17,9 +17,9 @@ const ToodForm = ({onAdd}) => {
             type="text"
             value={task}
                 onChange={(e)=>{setTask(e.target.value)}}
-                placeholder="할일을 입력하세요(메모장)"
+                placeholder="출석날짜 입력하기"
             />
-            <button type="submit">추가</button>
+            <button type="submit" className="uptext">추가</button>
         </form>
     );
 };
