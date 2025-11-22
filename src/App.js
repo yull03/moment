@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "./style/font.scss";
 import "./App.scss";
 import Time from "./componentes/Time";
 import MainPage from "./componentes/MainPage";

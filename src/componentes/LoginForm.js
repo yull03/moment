@@ -12,7 +12,7 @@ const LoginForm = ({onLogin}) => {
     }
     return (
         <form onSubmit={handleSubmit}>
-            <h2>당신의 이름을 입력하세요</h2>
+            <h2>도동이의 닉네임을 입력하세요!</h2>
             <input 
                 type="text"
                 value={user}

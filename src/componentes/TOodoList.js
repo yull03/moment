@@ -1,7 +1,7 @@
 
 const TOodoList = ({todos,onDelete,onToggle}) => {
     if(todos.length === 0){
-        return <p className="list">할일이 없습니다</p>;
+        return <p className="list">메모가 없습니다</p>;
     }
     return (
         <ul className="ch-list">
