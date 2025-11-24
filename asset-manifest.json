@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/moment/static/css/main.83ed80d8.css",
-    "main.js": "/moment/static/js/main.af95db80.js",
+    "main.js": "/moment/static/js/main.e9041cb8.js",
     "static/media/book.jpg": "/moment/static/media/book.b3ecf774a4b90832db29.jpg",
     "static/media/flash.jpg": "/moment/static/media/flash.32a4aedd345573154515.jpg",
     "index.html": "/moment/index.html",
     "main.83ed80d8.css.map": "/moment/static/css/main.83ed80d8.css.map",
-    "main.af95db80.js.map": "/moment/static/js/main.af95db80.js.map"
+    "main.e9041cb8.js.map": "/moment/static/js/main.e9041cb8.js.map"
   },
   "entrypoints": [
     "static/css/main.83ed80d8.css",
-    "static/js/main.af95db80.js"
+    "static/js/main.e9041cb8.js"
   ]
 }
